@@ -1,19 +1,16 @@
 import me from '../assets/me.jpg';
 import { useState } from 'react';
-
 import { motion } from 'framer-motion';
-
 
 export default function Home() {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
 
     const toggleDropdown = () => {
         setIsDropdownOpen(!isDropdownOpen);
     };
 
     return (
-        <div className="mx-auto  mt-10 pt-20 max-w-6xl">
+        <div className="mx-auto mt-10 pt-20 max-w-6xl">
             <div className="container flex flex-col-reverse md:flex-row md:justify-between">
                 {/* First section */}
                 <div>
@@ -21,9 +18,10 @@ export default function Home() {
                         className="text-3xl text-[#10375C] font-bold dark:text-white"
                         initial={{ y: -80, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
-                        transition={{ duration: 1, }}
-
-                    >Hi! 👋</motion.h1>
+                        transition={{ duration: 1 }}
+                    >
+                        Hi! 👋
+                    </motion.h1>
                     <motion.h1
                         className="text-3xl text-[#10375C] font-semibold dark:text-white"
                         initial={{ y: -20, opacity: 0 }}
@@ -45,20 +43,19 @@ export default function Home() {
                         learning, and sharing knowledge along the way.
                     </motion.p>
                     <motion.a
-                        href="#contact" // This will scroll to the section with the ID 'contact'
-                        className="p-4 relative rounded-lg top-10 hover:bg-slate-200 transition-all duration-300 text-[#10375C] font-semibold bg-[#F4F6FF]"
+                        href="#contact"
+                        className="p-4 rounded-lg hover:bg-slate-200 transition-all duration-300 text-[#10375C] font-semibold bg-[#F4F6FF] mt-6 inline-block"
                         initial={{ y: -20, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 1.2, delay: 1.5 }}
                     >
                         Contact Me!
-                        <span className="absolute w-2 h-2 animate-ping bg-slate-800 dark:bg-[#F3C623] top-0 left-0 rounded-lg"></span>
                     </motion.a>
                 </div>
 
                 {/* Second section with blob */}
                 <motion.div
-                    className="blob w-80 h-80 rounded-full border-4 border-[#F3C623] bg-cover bg-center relative shadow-2xl"
+                    className="blob w-80 h-80 rounded-full border-4 border-[#F3C623] bg-cover bg-center shadow-2xl"
                     style={{ backgroundImage: `url(${me})` }}
                     initial={{ y: -200, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
@@ -80,7 +77,7 @@ export default function Home() {
                 }
             `}</style>
 
-            <div className="mt-12">
+            <div className="mt-12 space-y-8">
                 {/* Clickable heading with arrow icon */}
                 <div onClick={toggleDropdown} className="cursor-pointer">
                     <h1 className="font-bold text-2xl hover:text-[#F3C623] text-[#10375C] dark:text-white dark:hover:text-[#F3C623] flex items-center">
@@ -91,7 +88,7 @@ export default function Home() {
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 stroke="currentColor"
-                                className="w-5 h-5 animate-bounce  ml-2 hover:text-[#F3C623]"
+                                className="w-5 h-5 animate-bounce ml-2 hover:text-[#F3C623]"
                             >
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
                             </svg>
