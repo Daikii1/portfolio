@@ -11,7 +11,7 @@ export default function Footer() {
                 {/* Download CV Button */}
                 <div className="w-full mt-2 flex justify-center">
                     <a
-                        href="/Outman Jail cv.pdf"
+                        href="https://daikii1.github.io/portfolio/Outman Jail cv.pdf"
                         download="Your_CV.pdf"
                         className="hover:scale-125 bg-[#F3C623] transition-all duration-300 hover:bg-amber-500 p-2 rounded font-bold text-gray-50 flex items-center"
                     >

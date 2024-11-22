@@ -125,7 +125,7 @@ export default function Home() {
 
             <div className="w-full mt-20 flex justify-center">
                 <a
-                    href="/Outman Jail cv.pdf"
+                    href="https://daikii1.github.io/portfolio/Outman Jail cv.pdf"
                     download="cv.pdf"
                     className="hover:scale-125 bg-[#F3C623] transition-all duration-300 hover:bg-amber-500 p-4 rounded font-bold text-gray-50 flex items-center"
                 >
