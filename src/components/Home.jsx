@@ -107,6 +107,7 @@ export default function Home() {
                         <div className="block bg-gray-400 text-white dark:bg-slate-800 font-medium dark:text-[#F3C623]  p-2 mb-2 rounded-md">CSS3</div>
                         <div className="block bg-gray-400 text-white dark:bg-slate-800 font-medium dark:text-[#F3C623]  p-2 mb-2 rounded-md">JavaScript</div>
                         <div className="block bg-gray-400 text-white dark:bg-slate-800 font-medium dark:text-[#F3C623]  p-2 mb-2 rounded-md">Tailwind</div>
+                        <div className="block bg-gray-400 text-white dark:bg-slate-800 font-medium dark:text-[#F3C623]  p-2 mb-2 rounded-md">Bootstrap</div>
                         <div className="block bg-gray-400 text-white dark:bg-slate-800 font-medium dark:text-[#F3C623]  p-2 mb-2 rounded-md">React.js</div>
                         <div className="block bg-gray-400 text-white dark:bg-slate-800 font-medium dark:text-[#F3C623]  p-2 mb-2 rounded-md">PHP</div>
                         <div className="block bg-gray-400 text-white dark:bg-slate-800 font-medium dark:text-[#F3C623]  p-2 mb-2 rounded-md">Laravel</div>

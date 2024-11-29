@@ -34,7 +34,7 @@ function Projects() {
                 {/* Aurashop Project */}
                 <div
                     className="w-full sm:w-96 min-h-[28rem] shadow-md dark:bg-gray-600 rounded flex flex-col"
-                    data-aos="fade-right"
+                    data-aos="fade-up"
                 >
                     <img src={Aurashop} alt="Aurashop Project" className="w-full h-auto rounded-t" />
                     <div className="p-4 flex flex-col flex-grow">
@@ -90,7 +90,7 @@ function Projects() {
                 {/* QuickFix Project */}
                 <div
                     className="w-full sm:w-96 min-h-[28rem] shadow-md dark:bg-gray-600 rounded flex flex-col"
-                    data-aos="fade-left"
+                    data-aos="fade-up"
                 >
                     <img src={QuickFix} alt="QuickFix Project" className="w-full h-auto rounded-t" />
                     <div className="p-4 flex flex-col flex-grow">

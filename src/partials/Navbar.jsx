@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react';
 
 export default function Navbar() {
     const [isDarkMode, setIsDarkMode] = useState(localStorage.getItem('theme') === 'dark');
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // State for mobile menu toggle
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-    // Toggle dark mode on and off
+
     const toggleDarkMode = () => {
         setIsDarkMode(prevMode => {
             const newMode = !prevMode;
@@ -13,7 +13,7 @@ export default function Navbar() {
         });
     };
 
-    // Apply dark mode class to the body on theme change
+
     useEffect(() => {
         if (isDarkMode) {
             document.body.classList.add('dark');
@@ -23,7 +23,7 @@ export default function Navbar() {
     }, [isDarkMode]);
 
     return (
-        <nav className="rounded-lg hover:bg-[#b2def8] dark:hover:hover:bg-[#214255] max-w-2xl md:mt-1 mx-auto fixed left-0 right-0 text-black font-bold shadow-md bg-[#F4F6FF] p-2 z-50 dark:bg-gray-600 dark:bg-opacity-50 dark:text-white transition-colors duration-500">
+        <nav className="rounded-lg hover:bg-[#b2def8] dark:hover:hover:bg-[#214255]  md:max-w-2xl md:mt-1 mx-auto fixed left-0 right-0 text-black font-bold shadow-md bg-[#F4F6FF] p-2 z-50 dark:bg-gray-600 dark:bg-opacity-50 dark:text-white transition-colors duration-500">
             <div className="flex justify-between items-center">
                 {/* Icons for large screens */}
                 <div className="flex space-x-4 hidden md:flex">
@@ -71,7 +71,7 @@ export default function Navbar() {
             </div>
 
             {/* Mobile Navbar */}
-            <div className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${isMobileMenuOpen ? 'max-h-screen' : 'max-h-0'} absolute top-0 left-0 right-0 bg-slate-600`}>
+            <div className={`md:hidden overflow-hidden  transition-all duration-300 ease-in-out ${isMobileMenuOpen ? 'max-h-screen' : 'max-h-0'} absolute top-0 left-0 right-0 bg-slate-600`}>
                 <div className="space-y-4 text-center dark:bg-gray-800 p-6 rounded-lg shadow-lg">
                     {/* Close Button */}
                     <div onClick={() => setIsMobileMenuOpen(false)} className="absolute top-4 right-4 cursor-pointer">
