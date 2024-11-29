@@ -98,10 +98,10 @@ export default function Home() {
 
                 {/* Dropdown with smooth animation */}
                 <div
-                    className={`${isDropdownOpen ? 'max-h-[500px] opacity-100 scale-100' : 'max-h-0 opacity-0 scale-95'
+                    className={`${isDropdownOpen ? 'max-h-[500px] opacity-100 scale-100' : 'max-h-30 opacity-0 scale-95'
                         } overflow-hidden transition-all duration-700 ease-in-out`}
                 >
-                    <h4 className="font-semibold mt-3 mb-3 flex items-center dark:text-white">Technologies :</h4>
+                    <h4 className="font-semibold mt-3 mb-3 flex items-center  dark:text-white">Technologies :</h4>
                     <div className="p-4 mt-2 flex flex-wrap space-x-3">
                         <div className="block bg-gray-400 text-white dark:bg-slate-800 dark:text-[#F3C623] font-medium p-2 mb-2 rounded-md">HTML5</div>
                         <div className="block bg-gray-400 text-white dark:bg-slate-800 font-medium dark:text-[#F3C623]  p-2 mb-2 rounded-md">CSS3</div>
@@ -112,13 +112,7 @@ export default function Home() {
                         <div className="block bg-gray-400 text-white dark:bg-slate-800 font-medium dark:text-[#F3C623]  p-2 mb-2 rounded-md">PHP</div>
                         <div className="block bg-gray-400 text-white dark:bg-slate-800 font-medium dark:text-[#F3C623]  p-2 mb-2 rounded-md">Laravel</div>
                         <div className="block bg-gray-400 text-white dark:bg-slate-800 font-medium dark:text-[#F3C623]  p-2 mb-2 rounded-md">WordPress</div>
-                    </div>
-                    <h4 className="font-semibold mt-3 mb-3 flex items-center   dark:text-white">UI/UX design :</h4>
-                    <div className="p-4 mt-2 flex flex-wrap space-x-3">
                         <div className="block bg-gray-400 text-white dark:bg-slate-800 dark:text-[#F3C623]  font-medium p-2 mb-2 rounded-md">Figma</div>
-                    </div>
-                    <h4 className="font-semibold mt-3 mb-3 flex items-center   dark:text-white">Version Control</h4>
-                    <div className="p-4 mt-2 flex flex-wrap space-x-3">
                         <div className="block bg-gray-400 text-white dark:bg-slate-800 dark:text-[#F3C623]  font-medium p-2 mb-2 rounded-md">Git</div>
                     </div>
                 </div>
