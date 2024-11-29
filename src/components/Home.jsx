@@ -51,6 +51,7 @@ export default function Home() {
                     >
                         Contact Me!
                     </motion.a>
+
                 </div>
 
                 {/* Second section with blob */}
@@ -117,17 +118,15 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+            <a
+                target="_blank"
+                href="https://daikii1.github.io/portfolio/Outman Jail cv.pdf"
+                download="cv.pdf"
+                className="fixed bottom-28 right-4 bg-[#F3C623] text-gray-50 rounded-full p-4 flex items-center justify-center hover:bg-amber-500 transition-all duration-300 shadow-lg hover:scale-125"
+            >
+                <i className="fas fa-download text-2xl animate-bounce"></i>
+            </a>
 
-            <div className="w-full mt-20 flex justify-center">
-                <a
-                    href="https://daikii1.github.io/portfolio/Outman Jail cv.pdf"
-                    download="cv.pdf"
-                    className="hover:scale-125 bg-[#F3C623] transition-all duration-300 hover:bg-amber-500 p-4 rounded font-bold text-gray-50 flex items-center"
-                >
-                    <i className="fas fa-download mr-2 animate-bounce"></i>
-                    Download CV
-                </a>
-            </div>
         </div>
     );
 }

@@ -1,7 +1,7 @@
 // src/Footer.js
 export default function Footer() {
     return (
-        <footer className="dark:bg-gray-800 mt-4 dark:text-white font-semibold flex md:justify-between md:flex-row flex-col-reverse bg-[#F4F6FF]  text-black  p-4">
+        <footer className="dark:bg-gray-900 dark:bg-opacity-50 mt-4 dark:text-white font-semibold flex md:justify-between md:flex-row flex-col-reverse bg-[#F4F6FF]  text-black  p-4">
             <div>
                 <h1 className="font-extrabold text-2xl text-amber-500">Outmane Jail</h1>
                 <h1>Full-Stack Developer </h1>
